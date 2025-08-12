@@ -24,7 +24,7 @@ function Hero() {
             </div>
         </div>
         <div className='relative'>
-            <Image src={HeroImage} alt="Hero" className='mt-8'/>
+            <Image src={HeroImage} alt="Hero" className='mt-8 w-full'/>
             <Image src={User} alt="User" width={305} className='absolute border-8 border-black rounded-full top-52 -right-14'/>
         </div>
     </div>
