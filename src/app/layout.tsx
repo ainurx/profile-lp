@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Logo from '../../public/png/Group 1.png'
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,6 +29,16 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <nav className="flex w-full justify-between px-32 py-12">
+          <Image src={Logo} alt="logo"/>
+          <ul className="flex gap-14">
+            <li className="text-white/50">BOOKMARKS</li>
+            <li className="text-[#E7165D]">INTERVIEW</li>
+            <li className="text-white/50">ELEMENTS</li>
+            <li className="text-white/50">PLAYLIST</li>
+            <li className="text-white/50">BOOKS</li>
+          </ul>
+        </nav>
         {children}
       </body>
     </html>
